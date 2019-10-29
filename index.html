@@ -18,7 +18,7 @@
 </head>
 
 <body>
-
+  <a href='#maincontent' class='skip-link'>Skip to main content.</a>
   <header>
     <!-- Start of Wrapper -->
     <div class="wrapper">
@@ -51,9 +51,6 @@
     <!-- Start of Social Div -->
     <div class="social">
       <ul>
-        <!-- !!!! TO DO: ADD ARIA LABELS FOR THESE ICONS !!!! -->
-        <!-- !!!! TO DO: ASK ABOUT ARIA-LABELS IF IT'S A LINK !!!! -->
-        <!-- <span class="sr-only">Time to destination by car:</span> -->
         <li><a href="https://www.instagram.com/junocollege/" target="_blank" aria-label="Visit our Instagram Timeline"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
 
         <li><a href="https://www.facebook.com/junocollegeoftech/" target="_blank" aria-label="Visit our Facebook Page"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
@@ -67,7 +64,7 @@
   </header>
 
 
-  <main>
+  <main id="maincontent">
 
     <!-- Start of About Section -->
     <section id="about" class="about">
@@ -75,13 +72,12 @@
       <div class="wrapper clearfix">
         <!-- Start of Image Div -->
         <div class="about-image">
-          <img src="./assets/small-box.jpg" alt="Container of paint on a shelf."> <!-- !!!! TO DO: ALT TEXT !!!! -->
+          <img src="./assets/small-box.jpg" alt="Container of paint on a shelf.">
         </div> <!-- End of Image Div -->
         <!-- Start of Description Div -->
         <div class="about-description">
           <h2>New product on the shelves</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta corporis aspernatur qui ipsum, tempore
-            deserunt veritatis harum! At, perferendis nulla.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut cum tenetur harum corporis accusamus eos perspiciatis sit rem animi, vitae, deserunt, molestias excepturi debitis. Quibusdam ullam dolore odit excepturi voluptas, recusandae sint, ab voluptate accusamus nam sunt quasi cumque officiis.</p>
           <button>Read more</button>
         </div> <!-- End of Description Div -->
       </div> <!-- End of Wrapper -->
@@ -108,7 +104,6 @@
       <!-- Start of Wrapper -->
       <div class="wrapper">
         <ul class="clearfix">
-          <!-- !!!! TO DO: ADD ARIA LABELS TO THESE ICONS !!!! -->
           <li><i class="far fa-images" aria-hidden="true"></i>
             <h3>Catalogue</h3>
           </li>
@@ -128,7 +123,7 @@
       <div class="blog-post blog-left clearfix">
         <!-- Start of Image Div -->
         <div class="blog-image">
-          <img src="./assets/right-image.jpg" alt=""> <!-- !!!! TO DO: ALT TEXT !!!! -->
+          <img src="./assets/right-image.jpg" alt="Paint brushes in a pile, all different colours."> <!-- !!!! TO DO: ALT TEXT !!!! -->
         </div> <!-- End of Image Div -->
         <!-- Start of Wrapper -->
         <div class="wrapper clearfix">
@@ -143,16 +138,13 @@
           </div> <!-- End of Text Div -->
         </div> <!-- End of Wrapper -->
       </div> <!-- End of Post Div -->
-
-
-      
       <!-- Start of Post Div -->
       <div class="blog-post blog-right clearfix">
         <!-- Start of Wrapper -->
        
         <!-- Start of Image Div -->
         <div class="blog-image">
-          <img src="./assets/left-image.jpg" alt=""> <!-- !!!! TO DO: ALT TEXT !!!! -->
+          <img src="./assets/left-image.jpg" alt="Buckets of paint with a hand holding a paintbrush.">
         </div> <!-- End of Image Div -->
         <div class="wrapper clearfix">
           <!-- Start of Text Div -->
@@ -167,8 +159,6 @@
       </div> <!-- End of Post Div -->
       <!-- </div> End of Wrapper -->
     </section> <!-- End of Blog Section -->
-
-    <!-- !!!! TO DO: DOUBLE THE BLOG SECTION, BUT REVERSE THE FLOATS !!!! -->
 
     <!-- Start of Contact Section -->
     <section id="contact" class="contact">
@@ -228,10 +218,7 @@
       $('a').smoothScroll({
         offset: 0,
       });
-      $('.mobile-nav i').click( function() {
-        $('.mobile-nav nav').toggleClass("mobile-nav-show");
-      });
-      $('.mobile-nav a').click(function () {
+      $('.mobile-nav').click( function() {
         $('.mobile-nav nav').toggleClass("mobile-nav-show");
       });
     });
