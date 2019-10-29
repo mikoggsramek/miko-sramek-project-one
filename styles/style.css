@@ -478,6 +478,8 @@ button {
 @media only screen and (max-width: 825px) {
   .about .about-description {
     width: 100%;
+    padding-left: 0;
+    margin-left: 0;
   }
   .about .about-description h2 {
     font-size: 6rem;
@@ -734,6 +736,7 @@ button {
 @media only screen and (max-width: 1125px) {
   .contact-form input {
     width: 100%;
+    text-align: center;
   }
 }
 
